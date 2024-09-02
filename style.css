@@ -192,6 +192,23 @@ header{
   .cart-item-info span {
     margin-right: 10px;
   }
+
+  #make-payment {
+    background-color: #000000 !important; /* Black background color with increased specificity */
+    color: #ffffff; /* White text color */
+    border: 1px solid #a8874c !important; /* Golden brown border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block; /* or display: inline-block; */
+  }
+  
+  #make-payment:hover {
+    background-color: #a8874c !important; /* Darker golden brown background color on hover */
+    border-color: #a8874c !; /* Update border color on hover */
+  }
+  
 /* ============main banner============= */
 #main-banner{
     max-width: 100%;

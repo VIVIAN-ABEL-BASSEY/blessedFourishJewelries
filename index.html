@@ -712,7 +712,6 @@
             });
             return totalPrice;
          }
-
          // Function to display cart products
          function displayCartProducts(cartProducts) {
             const cartList = document.getElementById('cartList'); // Get the cart list element
@@ -764,7 +763,25 @@
             const totalBillSpan = document.createElement('span');
             totalBillSpan.textContent = `Total Bill: $${totalPrice.toFixed(2)}`;
             cartList.appendChild(totalBillSpan);
+
+            // Create a "Make Payment" button
+            const makePaymentBtnContainer = document.createElement('div');
+            makePaymentBtnContainer.className = 'make-payment-btn-container';
+            const makePaymentBtn = document.createElement('button');
+            makePaymentBtn.textContent = 'Make Payment';
+            makePaymentBtn.id = 'make-payment';
+            makePaymentBtn.className = 'make-payment-btn';
+            makePaymentBtnContainer.appendChild(makePaymentBtn);
+            cartList.appendChild(makePaymentBtnContainer);
+
+            // Add event listener to the "Make Payment" button
+            makePaymentBtn.addEventListener('click', function () {
+               window.location.href = 'payment.html';
+            });
          }
+
+
+
 
       });
 
