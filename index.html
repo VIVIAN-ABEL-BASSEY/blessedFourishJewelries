@@ -163,7 +163,7 @@
                         <span>new</span>
                      </a>
                      <div class="new-product-text">
-                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <a href="#" class="new-product-title">Gold Ring for women :<span>$30</span></a>
                         <button class="new-product-cart-btn">Add to Cart</button>
                      </div>
                   </div>
@@ -176,7 +176,7 @@
                         <span>new</span>
                      </a>
                      <div class="new-product-text">
-                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <a href="#" class="new-product-title">silver Ring for women :<span>$30</span></a>
                         <button class="new-product-cart-btn">Add to Cart</button>
                      </div>
                   </div>
@@ -189,7 +189,7 @@
                         <span>new</span>
                      </a>
                      <div class="new-product-text">
-                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <a href="#" class="new-product-title">Dream Ring for women :<span>$30</span></a>
                         <button class="new-product-cart-btn">Add to Cart</button>
                      </div>
                   </div>
@@ -676,21 +676,21 @@
          addToCartBtns.forEach((btn) => {
             let buttonClicked = false; // Add a flag to track if the button has been clicked
             btn.addEventListener('click', (event) => {
-               if (!buttonClicked) { // Check if the button has been clicked before
-                  const productInfo = getProductInfo(event.target); // Get product info
-                  const existingProductIndex = cartProducts.findIndex((product) => product.name === productInfo.name);
-                  if (existingProductIndex !== -1) {
-                     // If the product already exists in the cart, increment its quantity
-                     cartProducts[existingProductIndex].quantity = (cartProducts[existingProductIndex].quantity || 1) + 1;
-                  } else {
-                     // If the product is new, add it to the cart with a quantity of 1
-                     productInfo.quantity = 1;
-                     cartProducts.push(productInfo);
+               const productInfo = getProductInfo(event.target); // Get product info
+               const existingProductIndex = cartProducts.findIndex((product) => product.name === productInfo.name);
+               if (existingProductIndex !== -1) {
+                  // If the product already exists in the cart, increment its quantity
+                  cartProducts[existingProductIndex].quantity++;
+               } else {
+                  // If the product is new, add it to the cart with a quantity of 1
+                  productInfo.quantity = 1;
+                  cartProducts.push(productInfo);
+                  if (!buttonClicked) {
+                     cartQty++; // Increment cart quantity only once
+                     document.getElementById('cartQty').textContent = cartQty; // Update the cart quantity element
+                     localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
+                     buttonClicked = true; // Set the flag to true
                   }
-                  cartQty++; // Increment cart quantity
-                  document.getElementById('cartQty').textContent = cartQty; // Update the cart quantity element
-                  localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
-                  buttonClicked = true; // Set the flag to true
                }
             });
          });
