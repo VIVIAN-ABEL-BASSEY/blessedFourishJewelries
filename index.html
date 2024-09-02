@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jewlries Store</title>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="icon" type="image/x-icon" href="/images/favicon.jpeg">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <script src="https://kit.fontawesome.com/f993829a33.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+   <!-- ------------------header------------------ -->
+   <header id="header">
+      <!-- --------top-bar----------- -->
+      <div class="header-top-bar">
+         <span>welcome to BlessedFlourishJewelries</span>
+      </div>
+      <!-- ============navigation=========== -->
+      <nav class="navigation">
+         <!-- ----logo--- -->
+         <a href="#" class="logo">
+            <img src="images/logo2.PNG" alt="logo">
+         </a>
+         <input type="checkbox" class="menu-btn" id="menu-btn">
+         <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+         </label>
+         <!-- --------menu------ -->
+         <ul class="menu">
+            <li><a href="#header" class="active">Home</a></li>
+            <li><a href="#category">Category</a></li>
+            <li><a href="#new-product">Products</a></li>
+            <li><a href="#clients">Testimonials</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <!-- <li><a href="#">contact</a></li> -->
+         </ul>
+         <!-- --------nav- right------ -->
+         <div class="right-nav">
+            <a href="#" class="nav-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" class="nav-user"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="nav-cart" id="cart"><i class="fa-solid fa-cart-shopping"></i><span
+                  id="cartQty">0</span></a>
+         </div>
+      </nav>
+   </header>
+   <!-- =======================main banner============ -->
+   <section id="main-banner">
+      <div class="main-banner-box">
+         <!-- --------img -->
+         <img src="images/banner_1.webp" alt="Banner">
+         <!-- ---------------text------ -->
+         <div class="main-banner-text">
+            <h1>Blessed Jewlries collection</h1>
+            <p>Designer Jewlries,Necklaces,Bracelets,Earings</p>
+            <a href="#">Shop Now</a>
+         </div>
+      </div>
+   </section>
+   <!-- ========== services info =============/ -->
+   <section class="what-we-provide">
+      <!-- ---------- icon ---- -->
+      <div class="w-info-box">
+         <!-- -------- icon ------- -->
+         <div class="w-info-icon">
+            <i class="fa-solid fa-plane"></i>
+         </div>
+         <!-- ------- text ------- -->
+         <div class="w-info-text">
+            <strong>Free Shipping</strong>
+            <p>At BlessedFlourishJewelries, We offer free shipping on all orders, ensuring your jewelry arrives at your
+               doorstep with no extra cost. Enjoy a seamless shopping experience with fast, reliable delivery included.
+            </p>
+         </div>
+      </div>
+      <div class="w-info-box">
+         <!-- -------- icon ------- -->
+         <div class="w-info-icon">
+            <i class="fa-solid fa-comments"></i>
+         </div>
+         <!-- ------- text ------- -->
+         <div class="w-info-text">
+            <strong>Support 24/7</strong>
+            <p>Our dedicated support team is available 24/7 to assist you with any questions or concerns. We're here to
+               ensure your shopping experience is smooth and enjoyable, any time you need us.</p>
+         </div>
+      </div>
+      <div class="w-info-box">
+         <!-- -------- icon ------- -->
+         <div class="w-info-icon">
+            <i class="fa-brands fa-cc-paypal"></i>
+         </div>
+         <!-- ------- text ------- -->
+         <div class="w-info-text">
+            <strong>100% payment secure</strong>
+            <p>Your payment security is our top priority. We use advanced encryption technology to ensure that your card
+               details are 100% secure, providing you with a safe and worry-free shopping experience..</p>
+         </div>
+      </div>
+   </section>
+   <!-- ================= product grid============ -->
+   <section class="product-grid-half">
+      <div class="product-grid-box product-grid-box2">
+         <img src="images/box1.webp" alt="product">
+         <div class="product-grid-text">
+            <span>Beautiful</span>
+            <strong>Wedding Ring</strong>
+            <a href="#">shop now</a>
+         </div>
+      </div>
+      <div class="product-grid-box product-grid-box1">
+         <img src="images/box2.webp" alt="product">
+         <div class="product-grid-text">
+            <span>Beautiful</span>
+            <strong>Wedding Earing</strong>
+            <a href="#">shop now</a>
+         </div>
+      </div>
+      <div class="product-grid-box product-grid-box3">
+         <img src="images/box3.webp" alt="product">
+         <div class="product-grid-text">
+            <span>Beautiful</span>
+            <strong>Wedding Necklace</strong>
+            <a href="#">shop now</a>
+         </div>
+      </div>
+   </section>
+   <!-- ============== new-products======== -->
+   <section id="new-product">
+      <div class="new-product-heading">
+         <h2>Our Products</h2>
+         <p>Add our products to your weekly lineup</p>
+      </div>
+      <div class="new-product-container">
+         <!-- --------swiper----- -->
+         <div class="swiper mySwiperNewProduct">
+            <div class="swiper-wrapper">
+               <!-- Slide 1 -->
+               <div class="swiper-slide">
+                  <div class="new-product-box">
+                     <a href="#" class="new-product-img">
+                        <img src="images/product-1.webp" alt="product">
+                        <span>new</span>
+                     </a>
+                     <div class="new-product-text">
+                        <a href="#" class="new-product-title">Ring for Men :$<span>40</span></a>
+                        <button class="new-product-cart-btn">Add to Cart</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Slide 2 -->
+               <div class="swiper-slide">
+                  <div class="new-product-box">
+                     <a href="#" class="new-product-img">
+                        <img src="images/product-2.webp" alt="product">
+                        <span>new</span>
+                     </a>
+                     <div class="new-product-text">
+                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <button class="new-product-cart-btn">Add to Cart</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Slide 3 -->
+               <div class="swiper-slide">
+                  <div class="new-product-box">
+                     <a href="#" class="new-product-img">
+                        <img src="images/product-3.webp" alt="product">
+                        <span>new</span>
+                     </a>
+                     <div class="new-product-text">
+                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <button class="new-product-cart-btn">Add to Cart</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Slide 4 -->
+               <div class="swiper-slide">
+                  <div class="new-product-box">
+                     <a href="#" class="new-product-img">
+                        <img src="images/product-4.webp" alt="product">
+                        <span>new</span>
+                     </a>
+                     <div class="new-product-text">
+                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <button class="new-product-cart-btn">Add to Cart</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Slide 5 -->
+               <div class="swiper-slide">
+                  <div class="new-product-box">
+                     <a href="#" class="new-product-img">
+                        <img src="images/product-5.webp" alt="product">
+                        <span>new</span>
+                     </a>
+                     <div class="new-product-text">
+                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <button class="new-product-cart-btn">Add to Cart</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Slide 6 -->
+               <div class="swiper-slide">
+                  <div class="new-product-box">
+                     <a href="#" class="new-product-img">
+                        <img src="images/product-6.webp" alt="product">
+                        <span>new</span>
+                     </a>
+                     <div class="new-product-text">
+                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <button class="new-product-cart-btn">Add to Cart</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Slide 7 -->
+               <div class="swiper-slide">
+                  <div class="new-product-box">
+                     <a href="#" class="new-product-img">
+                        <img src="images/product-7.webp" alt="product">
+                        <span>new</span>
+                     </a>
+                     <div class="new-product-text">
+                        <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                        <button class="new-product-cart-btn">Add to Cart</button> <br>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+         <!-- <div class="swiper-pagination"></div> -->
+      </div>
+   </section>
+   <!-- =============Category====== -->
+   <section id="category">
+      <div class="category-container">
+         <a href="#" class="category-box">
+            <img src="images/img1-middle.webp" alt="category">
+            <strong>Ring</strong>
+         </a>
+         <a href="#" class="category-box">
+            <img src="images/img2-middle.webp" alt="category">
+            <strong>Earings</strong>
+         </a>
+         <a href="#" class="category-box">
+            <img src="images/img3-middle.webp" alt="category">
+            <strong>Necklaces</strong>
+         </a>
+         <a href="#" class="category-box">
+            <img src="images/img4-middle.webp" alt="category">
+            <strong>Bracelets</strong>
+         </a>
+      </div>
+   </section>
+   <!-- ==========featured-product======= -->
+   <section id="new-product">
+      <div class="new-product-heading">
+         <h2>Featured Products</h2>
+         <p>Add our Featured products to your weekly lineup</p>
+      </div>
+      <div class="featured-product-container ">
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-8.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-9.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-10.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-11.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-12.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-13.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-14.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-15.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="new-product-box">
+               <a href="#" class="new-product-img">
+                  <img src="images/product-16.webp" alt="product">
+                  <span>new</span>
+               </a>
+               <div class="new-product-text">
+                  <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+                  <button class="new-product-cart-btn">Add to Cart</button>
+               </div>
+            </div>
+         </div>
+         <div class="new-product-box">
+            <a href="#" class="new-product-img">
+               <img src="images/product-17.webp" alt="product">
+               <span>new</span>
+            </a>
+            <div class="new-product-text">
+               <a href="#" class="new-product-title">Ring for women :<span>$30</span></a>
+               <button class="new-product-cart-btn">Add to Cart</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- ========Testimonials========= -->
+   <section id="clients">
+      <div class="client-heading">
+         <h3>Testimonials</h3>
+         <p>What they say</p>
+      </div>
+      <div class="client-box-container">
+         <div class="swiper mySwiperTestimonials">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="clients-box">
+                     <div class="clients-profile">
+                        <img src="images/t1.jpg" alt="client">
+                        <div class="profile-text">
+                           <strong>Adward Hames</strong>
+                           <span>Client</span>
+                        </div>
+                     </div>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <p>Absolutely stunning pieces! The craftsmanship is top-notch, and I get compliments every time I
+                        wear my new necklace. Highly recommend!</p>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="clients-box">
+                     <div class="clients-profile">
+                        <img src="images/t2.jpg" alt="client">
+                        <div class="profile-text">
+                           <strong>Adward Hames</strong>
+                           <span>Client</span>
+                        </div>
+                     </div>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <p>I was impressed with the quality and detail of the jewelry. It's clear that a lot of care goes
+                        into every piece. I'll definitely be shopping here again!</p>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="clients-box">
+                     <div class="clients-profile">
+                        <img src="images/t3.jpg" alt="client">
+                        <div class="profile-text">
+                           <strong>Adward Hames</strong>
+                           <span>Client</span>
+                        </div>
+                     </div>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <p>The customer service is exceptional, and the free shipping was a great bonus. My bracelet
+                        arrived quickly and was even more beautiful in person</p>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="clients-box">
+                     <div class="clients-profile">
+                        <img src="images/t4.jpg" alt="client">
+                        <div class="profile-text">
+                           <strong>Adward Hames</strong>
+                           <span>Client</span>
+                        </div>
+                     </div>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <p>I love my new earrings! The design is so unique and elegant. Plus, knowing my payment was secure
+                        made the whole experience even better.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </div>
+   </section>
+   <!-- ===========blogs======= -->
+   <section id="blog">
+      <div class="blog-heading">
+         <h3>Latest blogs</h3>
+         <span>There are Latest blog post</span>
+      </div>
+      <div class="blog-container">
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="images/blog-img1.webp" alt="blog">
+            </div>
+            <div class="blog-text">
+               <span>30 august 2024 </span>
+               <a href="#" class="blog-title">5 Must-Have Pieces to Elevate Your Everyday Style</a>
+               <p>Discover 5 must-have jewelry pieces that effortlessly enhance any outfit. From timeless necklaces to
+                  delicate earrings, these handcrafted treasures add elegance to your daily look, whether for work,
+                  casual outings, or special occasions</p>
+               <a href="#">Read more</a>
+            </div>
+         </div>
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="images/blog-img2.webp" alt="blog">
+            </div>
+            <div class="blog-text">
+               <span>30 august 2024 </span>
+               <a href="#" class="blog-title">The Art of Handcrafted Jewelry: Why Quality Matters</a>
+               <p>Handcrafted jewelry stands out for its unique charm and quality. Our artisans create each piece with
+                  care, making them true works of art. Learn why choosing high-quality, handcrafted jewelry is a lasting
+                  investment in craftsmanship.
+
+               </p>
+               <a href="#">Read more</a>
+            </div>
+         </div>
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="images/blog-img3.webp" alt="blog">
+            </div>
+            <div class="blog-text">
+               <span>30 august 2024i </span>
+               <a href="#" class="blog-title">How to Care for Your Jewelry: Tips for Long-Lasting Shine</a>
+               <p>Keep your jewelry as brilliant as the day you bought it. Follow our easy tips for proper storage and
+                  gentle cleaning to ensure your pieces remain a cherished part of your collection for years to come.
+               </p>
+               <a href="#">Read more</a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- ===========footer======= -->
+   <footer id="footer">
+      <div class="footer-container">
+         <div class="footer-company-box">
+            <a href="#" class="logo">
+               <img src="images/new_logo1.PNG" alt="logo">
+            </a>
+            <!-- -----details--- -->
+            <p>Crafted with care. Delivered with love</p>
+            <div class="footer-socials">
+               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+               <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+         </div>
+         <!-- ---------link---------- -->
+         <div class="footer-link-box">
+            <strong>Main Links</strong>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Category</a></li>
+               <li><a href="#">Product</a></li>
+               <li><a href="#">Feature</a></li>
+               <li><a href="#">Blogs</a></li>
+            </ul>
+         </div>
+         <div class="footer-link-box">
+            <strong>Physical Address</strong>
+            <h3>PL34 Akpan Andem</h3>
+            <h4>market Uyo</h4>
+            <h4>+234806560003</h4>
+         </div>
+      </div>
+      <hr>
+      <!-- =========footer-bottom===== -->
+      <div class="footer-bottom">
+         <br>
+         <span class="copyright">&#169;</span><span></span>
+         <span class="footer-owner">BlessedFlourishJewelries</span><span></span>
+         <span>2024</span>
+      </div>
+   </footer>
+   <!-- ======== hidden card section ========= -->
+   <section>
+      <div id="cartModal" class="cart-modal">
+         <h2>Cart</h2>
+         <ul id="cartList"></ul>
+      </div>
+   </section>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper   -->
+   <script>
+      // new products
+      var swiper = new Swiper(".mySwiperNewProduct", {
+         slidesPerView: 1,
+         spaceBetween: 10,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         breakpoints: {
+            640: {
+               slidesPerView: 2,
+               spaceBetween: 20,
+            },
+            740: {
+               slidesPerView: 3,
+               spaceBetween: 20,
+            },
+            1020: {
+               slidesPerView: 4,
+               spaceBetween: 20,
+            },
+            1224: {
+               slidesPerView: 5,/*products per page*/
+               spaceBetween: 20, /* gap between products*/
+            },
+         },
+      });
+      // Testimonials
+      var swiper = new Swiper(".mySwiperTestimonials", {
+         slidesPerView: 1,
+         spaceBetween: 10,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         breakpoints: {
+            640: {
+               slidesPerView: 2,
+               spaceBetween: 20,
+            },
+            768: {
+               slidesPerView: 3,
+               spaceBetween: 20,
+            },
+            1024: {
+               slidesPerView: 2,/*products per page*/
+               spaceBetween: 20, /* gap between products*/
+            },
+         },
+      });
+      // -------header-fix----
+      window.addEventListener("scroll", function () {
+         // console.log("hh")
+         var header = document.getElementById("header")
+         // if (window.scrollY > 0){
+         //    header.classList.add("header-fix")
+         // }
+         // else{
+         //    header.classList.remove("header-fix")
+         // }
+      })
+
+      // AI method 2
+      document.addEventListener('DOMContentLoaded', () => {
+         let cartQty = 0; // Initialize cart quantity to 0
+         let cartProducts = []; // Initialize cart products array
+         const cart = document.getElementById('cart'); // Get the cart element
+         const cartModal = document.getElementById('cartModal'); // Get the cart modal element
+         const cartList = document.getElementById('cartList'); // Get the cart list element
+
+         // Retrieve cart products from local storage
+         let storedCartProducts = localStorage.getItem('cartProducts');
+         if (storedCartProducts) {
+            cartProducts = JSON.parse(storedCartProducts);
+            cartQty = cartProducts.length;
+            document.getElementById('cartQty').textContent = cartQty;
+         }
+
+         // Add event listener to cart
+         cart.addEventListener('click', () => {
+            // Toggle cart modal visibility
+            cartModal.classList.toggle('show');
+            // Display cart products
+            displayCartProducts(cartProducts); // Pass cartProducts as an argument
+         });
+
+         const addToCartBtns = document.querySelectorAll('.new-product-cart-btn');
+         addToCartBtns.forEach((btn) => {
+            let buttonClicked = false; // Add a flag to track if the button has been clicked
+            btn.addEventListener('click', (event) => {
+               if (!buttonClicked) { // Check if the button has been clicked before
+                  const productInfo = getProductInfo(event.target); // Get product info
+                  const existingProductIndex = cartProducts.findIndex((product) => product.name === productInfo.name);
+                  if (existingProductIndex !== -1) {
+                     // If the product already exists in the cart, increment its quantity
+                     cartProducts[existingProductIndex].quantity = (cartProducts[existingProductIndex].quantity || 1) + 1;
+                  } else {
+                     // If the product is new, add it to the cart with a quantity of 1
+                     productInfo.quantity = 1;
+                     cartProducts.push(productInfo);
+                  }
+                  cartQty++; // Increment cart quantity
+                  document.getElementById('cartQty').textContent = cartQty; // Update the cart quantity element
+                  localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
+                  buttonClicked = true; // Set the flag to true
+               }
+            });
+         });
+
+         // Function to get product info from the button's parent element
+         function getProductInfo(btn) {
+            const productContainer = btn.closest('.new-product-box'); // Get the product container
+            const productName = productContainer.querySelector('.new-product-title').textContent;
+            const productPrice = productContainer.querySelector('.new-product-title span').textContent.replace('$', ''); // Get the price without the dollar sign
+            const productImage = productContainer.querySelector('img').src; // Get the product image URL
+            return { name: productName, price: productPrice, image: productImage }; // Return product info as an object
+         }
+
+         // Function to display cart products
+         function displayCartProducts(cartProducts) {
+            const cartList = document.getElementById('cartList'); // Get the cart list element
+            cartList.innerHTML = ''; // Clear the cart list
+
+            cartProducts.forEach((product, index) => {
+               const cartItem = document.createElement('li');
+               const cartItemInfo = document.createElement('div');
+               cartItemInfo.className = 'cart-item-info';
+
+               const productImage = document.createElement('img');
+               productImage.src = product.image;
+               productImage.alt = product.name;
+               cartItemInfo.appendChild(productImage);
+
+               const productNameSpan = document.createElement('span');
+               productNameSpan.textContent = product.name;
+               cartItemInfo.appendChild(productNameSpan);
+
+               const productQuantitySpan = document.createElement('span');
+               productQuantitySpan.textContent = `Quantity: ${product.quantity}`;
+               cartItemInfo.appendChild(productQuantitySpan);
+
+               const productPriceSpan = document.createElement('span');
+               productPriceSpan.textContent = `amount: $${product.price * product.quantity}`;
+               cartItemInfo.appendChild(productPriceSpan);
+
+               cartItem.appendChild(cartItemInfo);
+
+               const removeBtn = document.createElement('button');
+               removeBtn.textContent = 'Remove';
+               removeBtn.addEventListener('click', () => {
+                  // Remove the product from the cart array
+                  cartProducts.splice(index, 1);
+                  // Update the cart quantity
+                  cartQty--; // Decrement cart quantity
+                  console.log("cart qty", cartQty)
+                  document.getElementById('cartQty').textContent = cartQty; // Update the cart quantity element
+                  // Re-display the cart products
+                  displayCartProducts(cartProducts);
+                  localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
+               });
+               cartItem.appendChild(removeBtn);
+               cartList.appendChild(cartItem);
+            });
+         }
+      });
+
+
+
+
+   </script>
+</body>
+
+</html>
