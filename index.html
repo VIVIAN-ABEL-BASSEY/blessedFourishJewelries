@@ -704,6 +704,15 @@
             return { name: productName, price: productPrice, image: productImage }; // Return product info as an object
          }
 
+         // Function to calculate the total price of all products in the cart
+         function calculateTotalPrice(cartProducts) {
+            let totalPrice = 0;
+            cartProducts.forEach((product) => {
+               totalPrice += product.price * product.quantity;
+            });
+            return totalPrice;
+         }
+
          // Function to display cart products
          function displayCartProducts(cartProducts) {
             const cartList = document.getElementById('cartList'); // Get the cart list element
@@ -749,7 +758,14 @@
                cartItem.appendChild(removeBtn);
                cartList.appendChild(cartItem);
             });
+
+            // Calculate the total price
+            const totalPrice = calculateTotalPrice(cartProducts);
+            const totalBillSpan = document.createElement('span');
+            totalBillSpan.textContent = `Total Bill: $${totalPrice.toFixed(2)}`;
+            cartList.appendChild(totalBillSpan);
          }
+
       });
 
 
