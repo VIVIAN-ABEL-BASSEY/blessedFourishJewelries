@@ -1,0 +1,44 @@
+/* Center the form horizontally and vertically */
+#checkout-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* adjust the width to your liking */
+    margin: 0 auto;
+    padding: 20px; /* add some padding to the form */
+    background-color: #ffffff; /* white background */
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 600px; /* adjust the max-width to your liking */
+    padding-left: 0; /* remove the default padding on the left */
+  }
+  
+  /* Style the form labels and inputs */
+  #checkout-form label {
+    display: inline-block; /* display label as inline-block */
+    width: 20%; /* set the width of the label */
+    text-align: right; /* align the label text to the right */
+    padding-left: 0; /* remove the default padding on the left of the label */
+    margin-right: 5px; /* add some space between the label and input fields */
+  }
+  
+  #checkout-form input[type="text"], 
+  #checkout-form input[type="email"] {
+    width: 60%; /* set the width of the input */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #checkout-form input[type="text"]:focus, 
+  #checkout-form input[type="email"]:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add some space between the form items */
+  #checkout-form > * {
+    margin-bottom: 20px;
+  }
